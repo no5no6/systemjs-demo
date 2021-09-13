@@ -8,7 +8,7 @@ module.exports = {
   output: {
     filename: 'index.js',
     path: path.join(__dirname, 'dist'),
-    libraryTarget: 'system', //
+    libraryTarget: 'system', // 输出模块类型
   },
   devtool: 'source-map',
   devServer: {
@@ -34,7 +34,7 @@ module.exports = {
       {
         template: './src/index.html',
         title: 'systemjs-demo',
-        inject: false   //
+        inject: false   // 不通过插件注入到 html
       }
     )
   ],
